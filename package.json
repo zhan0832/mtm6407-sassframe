@@ -1,0 +1,22 @@
+{
+  "name": "mtm6407-sassframe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch src/sassframe.scss css/sassframe.css",
+    "build": "sass src/sassframe.scss dist/sassframe.css --style=compressed --no-source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhan0832/mtm6407-sassframe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/zhan0832/mtm6407-sassframe/issues"
+  },
+  "homepage": "https://github.com/zhan0832/mtm6407-sassframe#readme"
+}
