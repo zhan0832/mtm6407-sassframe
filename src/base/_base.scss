@@ -1,0 +1,35 @@
+@use 'sass:map';
+@use '../variables' as variables;
+@use '../components' as components;
+
+body {
+    font-family: map.get(variables.$fonts, 'body');
+    font-size: map.get(variables.$font-sizes, 'md');
+    font-weight: map.get(variables.$font-weights, 'normal');
+}
+
+h1 {
+    font-size: map.get(variables.$font-sizes, '3xl');
+    font-weight: map.get(variables.$font-weights, 'black');
+    margin-bottom: map.get(variables.$spacing, 'md');
+}
+
+h2 {
+    font-size: map.get(variables.$font-sizes, '2xl');
+    font-weight: map.get(variables.$font-weights, 'bold');
+    margin-bottom: map.get(variables.$spacing, 'md');
+}
+
+h3 {
+    font-size: map.get(variables.$font-sizes, 'xl');
+    font-weight: map.get(variables.$font-weights, 'medium');
+    margin-bottom: map.get(variables.$spacing, 'md');
+}
+
+p {
+    margin-bottom: map.get(variables.$spacing, 'md');
+}
+button {
+    @include components.button;
+}
+

@@ -1,0 +1,8 @@
+@use "sass:map";
+@use '../variables' as variables;
+
+.container {
+  width: min(1200px, 90%);
+  margin: map.get(variables.$spacing, 'md') auto;
+  padding: map.get(variables.$spacing, 'md');
+}

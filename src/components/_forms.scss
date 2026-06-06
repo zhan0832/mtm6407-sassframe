@@ -1,0 +1,43 @@
+@use 'sass:map';
+@use '../variables' as variables;
+
+@mixin form {
+    max-width: 600px;
+    padding: 1.5rem;
+    background-color: map.get(variables.$colors, 'light');
+    border-radius: 8px;
+
+    label {
+        display: inline-block;
+        background-color: map.get(variables.$colors, 'info');
+        color: map.get(variables.$colors, 'light');
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        margin-bottom: 0.5rem;
+        font-weight: map.get(variables.$font-weights, 'semibold');
+    }
+
+    input,
+    textarea,
+    select {
+        width: 100%;
+        display: block;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+        border: 1px solid map.get(variables.$colors, 'secondary');
+        border-radius: 4px;
+        font-size: map.get(variables.$font-sizes, 'md');
+        font-family: inherit;
+        &::placeholder {
+            color: map.get(variables.$colors, 'secondary');
+            }
+    }
+
+    textarea {
+        resize: vertical;
+    }
+}
+
+form {
+    @include form;
+}

@@ -1,106 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/sassframe.css">
-    <title>Sass Frame</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SassFrame Framework Demo</title>
+  <link rel="stylesheet" href="css/sassframe.css">
 </head>
+
 <body>
-    <header>
+
+  <header>
+    <div class="container">
     <h1>SassFrame</h1>
-    <p>A lightweight Sass-based CSS framework.</p>
-    <button>Get Started</button>
+    <div>
+    <p class="text-secondary ">
+      SassFrame is a lightweight CSS framework built with Sass to provide
+      reusable styles, utility classes, and customizable themes for modern web projects.
+    </p>
+
+    <button class="btn-primary ">
+      Download Framework
+    </button>
+    </div>
+  </div>
   </header>
 
   <main>
-    <section>
-      <h2>Headings</h2>
-      <h1>Heading One</h1>
-      <h2>Heading Two</h2>
-      <h3>Heading Three</h3>
-      <p>This is a paragraph styled by SassFrame.</p>
+
+    <section class="container">
+      <h2>Typography</h2>
+
+      <h1>Heading Level 1</h1>
+      <h2>Heading Level 2</h2>
+      <h3>Heading Level 3</h3>
+
+      <p>
+        SassFrame provides clean typography styles with readable spacing,
+        customizable fonts, and consistent visual hierarchy.
+      </p>
+
+      <a href="#">
+        Learn More
+      </a>
     </section>
 
-    <section>
+    <section class="container">
       <h2>Lists</h2>
-      <ul>
-        <li>Custom theme</li>
-        <li>Sass variables</li>
+      <div class="grid grid-2">
+      <ul class="list-unstyled">
+        <li>Reusable components</li>
+        <li>Responsive design</li>
         <li>Utility classes</li>
+        <li>Easy customization</li>
       </ul>
 
-      <ol>
-        <li>Install SassFrame</li>
+      <ol class="list-ordered">
+        <li>Install the framework</li>
         <li>Link the CSS file</li>
-        <li>Start building</li>
+        <li>Build your website</li>
       </ol>
+    </div>
     </section>
 
-    <section>
+    <section class="container ">
       <h2>Buttons</h2>
-      <button>Default Button</button>
-      <a href="#" class="btn">Link Button</a>
+      <div class="flex flex-spacebetween">
+      <button class="btn">
+        Primary Button
+      </button>
+
+      <button class="btn-secondary">
+        Secondary Button
+      </button>
+      <button class="btn-success">
+        Success 
+      </button>
+      <button class="btn-danger">
+        Danger
+      </button>
+      </div>
     </section>
 
-    <section>
-      <h2>Form Elements</h2>
+    <section class="container">
+      <h2>Contact Form</h2>
 
       <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Enter your name">
 
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Enter your email">
+        <label for="fullname">
+          Full Name
+        </label>
 
-        <label for="message">Message</label>
-        <textarea id="message" rows="4" placeholder="Write your message"></textarea>
+        <input
+          type="text"
+          id="fullname"
+          placeholder="Enter your full name"
+        >
 
-        <label for="theme">Choose a theme</label>
+        <label for="email">
+          Email Address
+        </label>
+
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+        >
+
+        <label for="message">
+          Message
+        </label>
+
+        <textarea
+          id="message"
+          rows="5"
+          placeholder="Write your message"
+        ></textarea>
+
+        <label for="theme">
+          Select Theme
+        </label>
+
         <select id="theme">
           <option>Default</option>
           <option>Dark</option>
           <option>Soft</option>
         </select>
 
-        <button type="submit">Submit</button>
+        <button type="submit">
+          Submit Form
+        </button>
+
       </form>
     </section>
 
-    <section>
-      <h2>Table</h2>
+    <section class="container">
+      <h2>Utility Classes</h2>
 
       <table>
+
         <thead>
           <tr>
-            <th>Class</th>
-            <th>Purpose</th>
+            <th>Class Name</th>
+            <th>Description</th>
             <th>Example</th>
           </tr>
         </thead>
+
         <tbody>
+
           <tr>
             <td>.text-primary</td>
             <td>Changes text color</td>
-            <td>Primary text</td>
+            <td>Primary colored text</td>
           </tr>
+
           <tr>
             <td>.font-bold</td>
-            <td>Makes text bold</td>
+            <td>Applies bold font weight</td>
             <td>Bold text</td>
           </tr>
+
           <tr>
             <td>.p-1</td>
             <td>Adds padding</td>
             <td>Padding utility</td>
           </tr>
+
+          <tr>
+            <td>.m-1</td>
+            <td>Adds margin</td>
+            <td>Margin utility</td>
+          </tr>
+
         </tbody>
+
       </table>
     </section>
+
   </main>
 
   <footer>
-    <p>&copy; 2026 SassFrame. Built with Sass.</p>
+    <p>
+      © 2026 SassFrame CSS Framework
+    </p>
   </footer>
 
 </body>

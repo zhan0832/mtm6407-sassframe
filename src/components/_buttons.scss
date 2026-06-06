@@ -1,0 +1,16 @@
+@use 'sass:map';
+@use '../variables' as variables;
+
+@mixin button {
+    display: block;
+    padding: map.get(variables.$spacing, 'sm') map.get(variables.$spacing, 'md');
+    margin: map.get(variables.$spacing, 'sm') 0;
+    font-size: map.get(variables.$font-sizes, 'md');
+    font-weight: map.get(variables.$font-weights, 'semibold');
+    color: map.get(variables.$colors, 'light');
+    background-color: map.get(variables.$colors, 'primary');
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}

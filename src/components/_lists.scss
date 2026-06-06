@@ -1,0 +1,55 @@
+@use 'sass:map';
+@use '../variables' as variables;
+
+@mixin list-base {
+    margin: map.get(variables.$spacing, 'md') 0;
+
+    padding-left: map.get(
+        variables.$spacing,
+        'lg'
+    );
+
+    li {
+        padding: map.get(
+            variables.$spacing,
+            'sm'
+        );
+
+        margin-bottom: map.get(
+            variables.$spacing,
+            'xs'
+        );
+
+        border: 1px solid map.get(
+            variables.$colors,
+            'secondary'
+        );
+
+        border-radius: 4px;
+
+        list-style-position: inside;
+    }
+}
+
+.list {
+    @include list-base;
+}
+
+$list-types: (
+    'unstyled': none,
+    'ordered': decimal
+);
+
+@each $name, $style in $list-types {
+
+    .list-#{$name} {
+
+        @include list-base;
+
+        list-style-type: $style;
+
+        @if $style == none {
+            padding-left: 0;
+        }
+    }
+}

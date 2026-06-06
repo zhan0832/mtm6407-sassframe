@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 /***
     The new CSS reset - version 1.11.3 (last updated 25.08.2024)
     GitHub page: https://github.com/elad2412/the-new-css-reset
@@ -85,6 +86,286 @@ meter {
 
 ::-webkit-details-marker {
   display: none;
+}
+
+.text-primary {
+  color: #007bff;
+}
+
+.bg-primary {
+  background-color: #007bff;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.text-secondary {
+  color: #6c757d;
+}
+
+.bg-secondary {
+  background-color: #6c757d;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.text-success {
+  color: #28a745;
+}
+
+.bg-success {
+  background-color: #28a745;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.text-danger {
+  color: #dc3545;
+}
+
+.bg-danger {
+  background-color: #dc3545;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.text-warning {
+  color: #ffc107;
+}
+
+.bg-warning {
+  background-color: #ffc107;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.text-info {
+  color: #17a2b8;
+}
+
+.bg-info {
+  background-color: #17a2b8;
+}
+
+.btn-info {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.text-dark {
+  color: #000;
+}
+
+.bg-dark {
+  background-color: #000;
+}
+
+.btn-dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.text-light {
+  color: #fff;
+}
+
+.bg-light {
+  background-color: #fff;
+}
+
+.btn-light {
+  background-color: #fff;
+  color: #fff;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+form {
+  max-width: 600px;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+}
+form label {
+  display: inline-block;
+  background-color: #17a2b8;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+form input,
+form textarea,
+form select {
+  width: 100%;
+  display: block;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #6c757d;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+form input::placeholder,
+form textarea::placeholder,
+form select::placeholder {
+  color: #6c757d;
+}
+form textarea {
+  resize: vertical;
+}
+
+.list {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+.list li {
+  padding: 0.5rem;
+  margin-bottom: 0.25rem;
+  border: 1px solid #6c757d;
+  border-radius: 4px;
+  list-style-position: inside;
+}
+
+.list-unstyled {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+.list-unstyled li {
+  padding: 0.5rem;
+  margin-bottom: 0.25rem;
+  border: 1px solid #6c757d;
+  border-radius: 4px;
+  list-style-position: inside;
+}
+.list-unstyled {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.list-ordered {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+.list-ordered li {
+  padding: 0.5rem;
+  margin-bottom: 0.25rem;
+  border: 1px solid #6c757d;
+  border-radius: 4px;
+  list-style-position: inside;
+}
+.list-ordered {
+  list-style-type: decimal;
+}
+
+body {
+  font-family: "Inter";
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+button {
+  display: block;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.container {
+  width: min(1200px, 90%);
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-spacebetween {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
 }
 
 /*# sourceMappingURL=sassframe.css.map */
