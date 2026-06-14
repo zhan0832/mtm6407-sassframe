@@ -1,0 +1,28 @@
+@use 'sass:map';
+@use './spacing' as variables;
+
+$margins: (
+  'none': 0,
+  'sm': map.get(variables.$spacing, 'sm'),
+  'md': map.get(variables.$spacing, 'md'),
+  'lg': map.get(variables.$spacing, 'lg'),
+  'xl': map.get(variables.$spacing, 'xl'),
+);
+
+@each $name, $value in $margins {
+  .margin-#{$name} {
+    margin: $value;
+  }
+    .margin-top-#{$name} {
+        margin-top: $value;
+    }
+    .margin-right-#{$name} {
+        margin-right: $value;
+    }
+    .margin-bottom-#{$name} {
+        margin-bottom: $value;
+    }
+    .margin-left-#{$name} {
+        margin-left: $value;
+    }
+}

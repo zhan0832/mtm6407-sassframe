@@ -1,0 +1,21 @@
+@use 'sass:map';
+@use '../variables' as variables;
+
+@mixin table-styles {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: map.get(variables.$spacing, 'lg');
+    th, td {
+        border: 1px solid map.get(variables.$colors, 'secondary');
+        padding: map.get(variables.$spacing, 'sm');
+        text-align: left;
+    }
+    th {
+        background-color: map.get(variables.$colors, 'primary');
+        color: map.get(variables.$colors, 'light');
+    }
+
+}
+.table {
+    @include table-styles;
+}

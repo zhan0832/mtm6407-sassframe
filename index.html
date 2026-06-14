@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,18 +12,18 @@
 
   <header>
     <div class="container">
-    <h1>SassFrame</h1>
-    <div>
-    <p class="text-secondary ">
-      SassFrame is a lightweight CSS framework built with Sass to provide
-      reusable styles, utility classes, and customizable themes for modern web projects.
-    </p>
+      <h1>SassFrame</h1>
+      <div>
+        <p class="text-secondary margin-top-lg">
+          SassFrame is a lightweight CSS framework built with Sass to provide
+          reusable styles, utility classes, and customizable themes for modern web projects.
+        </p>
 
-    <button class="btn-primary ">
-      Download Framework
-    </button>
+        <button class="btn-primary ">
+          Learn More
+        </button>
+      </div>
     </div>
-  </div>
   </header>
 
   <main>
@@ -39,104 +40,89 @@
         customizable fonts, and consistent visual hierarchy.
       </p>
 
-      <a href="#">
+      <button class="btn-primary ">
         Learn More
-      </a>
+      </button>
+    </section>
+
+    <section class="container">
+      <h2>Cards</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <img src="https://placehold.co/400x300" alt="Random Image">
+          <div class="card-body">
+            <h3 class="card-header">Card Title 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur.</p>
+            <button class="btn-primary">Read More</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://placehold.co/400x300" alt="Random Image">
+          <div class="card-body">
+            <h3 class="card-header">Card Title 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur.</p>
+            <button class="btn-primary">Read More</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://placehold.co/400x300" alt="Random Image">
+          <div class="card-body">
+            <h3 class="card-header">Card Title 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur.</p>
+            <button class="btn-primary">Read More</button>
+          </div>
+        </div>
+
     </section>
 
     <section class="container">
       <h2>Lists</h2>
       <div class="grid grid-2">
-      <ul class="list-unstyled">
-        <li>Reusable components</li>
-        <li>Responsive design</li>
-        <li>Utility classes</li>
-        <li>Easy customization</li>
-      </ul>
-
-      <ol class="list-ordered">
-        <li>Install the framework</li>
-        <li>Link the CSS file</li>
-        <li>Build your website</li>
-      </ol>
-    </div>
+        <div>
+          <h3>Unstyled List</h3>
+          <ul class="list-unstyled">
+            <li>Reusable components</li>
+            <li>Responsive design</li>
+            <li>Utility classes</li>
+            <li>Easy customization</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Ordered List</h3>
+          <ol class="list-ordered">
+            <li>Install the framework</li>
+            <li>Link the CSS file</li>
+            <li>Build your website</li>
+          </ol>
+        </div>
+      </div>
     </section>
 
     <section class="container ">
       <h2>Buttons</h2>
       <div class="flex flex-spacebetween">
-      <button class="btn">
-        Primary Button
-      </button>
+        <button class="btn">
+          Primary Button
+        </button>
 
-      <button class="btn-secondary">
-        Secondary Button
-      </button>
-      <button class="btn-success">
-        Success 
-      </button>
-      <button class="btn-danger">
-        Danger
-      </button>
+        <button class="btn-secondary">
+          Secondary Button
+        </button>
+        <button class="btn-success">
+          Success
+        </button>
+        <button class="btn-danger">
+          Danger
+        </button>
       </div>
     </section>
 
     <section class="container">
-      <h2>Contact Form</h2>
+      <h2>Utility Classes Examples</h2>
 
-      <form>
-
-        <label for="fullname">
-          Full Name
-        </label>
-
-        <input
-          type="text"
-          id="fullname"
-          placeholder="Enter your full name"
-        >
-
-        <label for="email">
-          Email Address
-        </label>
-
-        <input
-          type="email"
-          id="email"
-          placeholder="Enter your email"
-        >
-
-        <label for="message">
-          Message
-        </label>
-
-        <textarea
-          id="message"
-          rows="5"
-          placeholder="Write your message"
-        ></textarea>
-
-        <label for="theme">
-          Select Theme
-        </label>
-
-        <select id="theme">
-          <option>Default</option>
-          <option>Dark</option>
-          <option>Soft</option>
-        </select>
-
-        <button type="submit">
-          Submit Form
-        </button>
-
-      </form>
-    </section>
-
-    <section class="container">
-      <h2>Utility Classes</h2>
-
-      <table>
+      <table class="table">
 
         <thead>
           <tr>
@@ -149,27 +135,43 @@
         <tbody>
 
           <tr>
-            <td>.text-primary</td>
+            <td>.text-info</td>
             <td>Changes text color</td>
-            <td>Primary colored text</td>
+            <td class="text-info">Info colored text</td>
+          </tr>
+
+          <tr>
+            <td>.text-danger</td>
+            <td>Changes text color</td>
+            <td class="text-danger">Danger colored text</td>
           </tr>
 
           <tr>
             <td>.font-bold</td>
             <td>Applies bold font weight</td>
-            <td>Bold text</td>
+            <td class="font-bold">Bold text</td>
           </tr>
 
           <tr>
-            <td>.p-1</td>
-            <td>Adds padding</td>
-            <td>Padding utility</td>
+            <td>.font-black</td>
+            <td>Applies black font weight</td>
+            <td class="font-black">Black text</td>
           </tr>
 
           <tr>
-            <td>.m-1</td>
-            <td>Adds margin</td>
-            <td>Margin utility</td>
+            <td>
+              <div>.bg-warning</div>
+            </td>
+            <td>Changes background color</td>
+            <td class="bg-warning">Warning colored background</td>
+          </tr>
+
+          <tr>
+            <td>
+              <div>.bg-success</div>
+            </td>
+            <td>Changes background color</td>
+            <td class="bg-success">Success colored background</td>
           </tr>
 
         </tbody>
@@ -177,13 +179,56 @@
       </table>
     </section>
 
+    <section class="container">
+      <h2>Contact Form</h2>
+
+      <form>
+
+        <label for="fullname">
+          Full Name
+        </label>
+
+        <input type="text" id="fullname" placeholder="Enter your full name">
+
+        <label for="email">
+          Email Address
+        </label>
+
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label for="message">
+          Message
+        </label>
+
+        <textarea id="message" rows="5" placeholder="Write your message"></textarea>
+
+        <label for="theme">
+          Select Theme
+        </label>
+
+        <select id="theme">
+          <option>Default</option>
+          <option>Dark</option>
+          <option>Soft</option>
+        </select>
+
+        <button type="submit" class="btn-secondary margin-top-xl">
+          Submit Form
+        </button>
+
+      </form>
+    </section>
+
+
+
   </main>
 
   <footer>
     <p>
-      © 2026 SassFrame CSS Framework
+      © 2026 Yan Framework
     </p>
   </footer>
 
 </body>
+
 </html>

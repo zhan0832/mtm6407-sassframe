@@ -1,0 +1,32 @@
+@use 'sass:map';
+@use '../variables' as variables;
+
+@mixin card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid map.get(variables.$colors, 'secondary');
+    border-radius: 8px;
+    overflow: hidden;
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+    .card-header {
+        font-size: map.get(variables.$font-sizes, 'lg');
+        font-weight: map.get(variables.$font-weights, 'semibold');
+    }
+    .card-body {
+        padding: 1rem;
+        font-size: map.get(variables.$font-sizes, 'md');
+        color: map.get(variables.$colors, 'secondary');
+        button {
+            margin-top: 1rem;
+            width: 100%;
+        }
+    }
+}
+  
+.card {
+    @include card;
+}

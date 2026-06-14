@@ -4,10 +4,6 @@
 @mixin list-base {
     margin: map.get(variables.$spacing, 'md') 0;
 
-    padding-left: map.get(
-        variables.$spacing,
-        'lg'
-    );
 
     li {
         padding: map.get(
@@ -48,8 +44,5 @@ $list-types: (
 
         list-style-type: $style;
 
-        @if $style == none {
-            padding-left: 0;
-        }
     }
 }

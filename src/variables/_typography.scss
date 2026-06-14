@@ -27,3 +27,8 @@ $font-weights: (
         font-weight: $weight;
     }
 }
+@each $name, $size in $font-sizes {
+    .text-#{$name} {
+        font-size: $size;
+    }
+}
