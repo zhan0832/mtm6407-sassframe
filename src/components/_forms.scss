@@ -41,3 +41,12 @@
 form {
     @include form;
 }
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: #3f2eaa;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+}
