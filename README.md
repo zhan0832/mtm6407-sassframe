@@ -15,6 +15,7 @@ SassFrame is a lightweight CSS framework built with Sass and Sass partials. It p
 * Color utilities
 * Font-size and font-weight utilities
 * Margin utilities
+* Compiled CSS files for development and production
 
 ## Installation
 
@@ -128,11 +129,19 @@ into:
 css/sassframe.css
 ```
 
-To create the compressed build, run:
+To create the compressed production build, run:
 
 ```bash
 npm run build
 ```
+
+This generates:
+
+```text
+dist/sassframe.css
+```
+
+The compiled CSS files are included in the repository.
 
 ## Customization
 
