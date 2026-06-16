@@ -176,7 +176,6 @@ Open `index.html` in a browser to view examples of the framework.
 
 ## Team Members
 
-* Team Member 1
-* Team Member 2
-* Team Member 3
-* Team Member 4
+* Yan Zhang
+* Hui Chen
+* Harsh Kumar
